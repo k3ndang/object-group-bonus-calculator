@@ -47,7 +47,7 @@ for (let i = 0; i < employees.length; i++){
 
 function getEmployeeBonus(employee) {
   console.log(employee);
-  
+
 }
 
 console.log(getEmployeeBonus);
