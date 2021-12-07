@@ -1,7 +1,7 @@
 
-[] loop over employees array
-[] call a function with a single employee object
-[] console.log the return value of the function
+[x] loop over employees array
+[x] call a function with a single employee object
+[x] console.log the return value of the function
 
 for (let employee of employees)
     let returnVal = getBonus (employee)

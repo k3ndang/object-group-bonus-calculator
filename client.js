@@ -39,18 +39,21 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-for (let i = 0; i < employees.length; i++){
-  console.log(employees[i]);
-  getEmployeeBonus(employees[i]);
+// Lopp over the employees array
+for (let employee of employees){
+  console.log(employees);
+ let bonusInfo = getEmployeeBonus(employee);
+ console.log(`bonusInfo for ${employee.name}`, bonusInfo);
 }
 
 
 function getEmployeeBonus(employee) {
-  console.log(employee);
-
+  return {
+    // todo, put stuff in here
+  };
 }
 
-console.log(getEmployeeBonus);
+
 
 
 console.log( employees );
