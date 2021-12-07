@@ -39,12 +39,7 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-// Lopp over the employees array
-for (let employee of employees){
-  console.log(employees);
- let bonusInfo = getEmployeeBonus(employee);
- console.log(`bonusInfo for ${employee.name}`, bonusInfo);
-}
+
 
 
 function getEmployeeBonus(employee) {
@@ -108,7 +103,21 @@ return {
   };
 }
 
+$(document).ready(onReady);
+
+function onReady() {
+  console.log('so ready');
+
+  // Lopp over the employees array
+for (let employee of employees){
+  console.log(employees);
+ let bonusInfo = getEmployeeBonus(employee);
+ console.log(`bonusInfo for ${employee.name}`, bonusInfo);
+  // do some jQuery to render to DOM
+  $('#employee').append(`<li>${employee.name}</li>`);
+
+}
+};
 
 
-
-console.log( employees );
+console.log(employees);

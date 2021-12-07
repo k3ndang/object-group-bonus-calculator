@@ -52,3 +52,7 @@ Bonus calculation
     no bonus above 13% or bonus equal 0%
     done 👆
 --------------------
+
+[] stretch goals
+    [] show employees and bonouses on the DOM
+    [] run the app after
