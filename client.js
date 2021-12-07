@@ -39,4 +39,18 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
+for (let i = 0; i < employees.length; i++){
+  console.log(employees[i]);
+  getEmployeeBonus(employees[i]);
+}
+
+
+function getEmployeeBonus(employee) {
+  console.log(employee);
+  
+}
+
+console.log(getEmployeeBonus);
+
+
 console.log( employees );
