@@ -42,9 +42,13 @@ Bonus calculation
     based on employee number
     if (number > 4)
         bonus += 5%
-    
+    done 👆
+--------------------    
     based on annual income
     if (income > $65000)
         bonus = 1%
-    
+    done 👆
+--------------------   
     no bonus above 13% or bonus equal 0%
+    done 👆
+--------------------

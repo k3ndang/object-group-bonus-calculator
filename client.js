@@ -67,22 +67,38 @@ function getEmployeeBonus(employee) {
   }
 
   // modify the bonus based on 
-  // 
+  // employee number
+  // 4 digits means they're been here over 15 years and get extra bonus
   if (employee.employeeNumber.toString().length === 4 ) {
     bonusPercentages += 0.05
     console.log(`${employee.name} 4 digits bonus`);
-    
+   
   }
 
+  // progressive bonus system
 
+  /*if (employee.annualSalary > 65000) {
+    bonusPercentages -= 0.01;
+    console.log(employee.name, '-1%');
+  }
 
+  if (bonusPercentage > 0.13) {
+    bonusPercentages = 0.13;
+  }
+  else if (bonusPercentage < 0) {
+    bonusPercentages = 0;
+  } 
+  */
+ 
+bonusPercentages = Math.min(bonusPercentages, 0.13)
+bonusPercentages = Math.max(bonusPercentages, 0);
 
-  console.log('bonusPercentage', bonusPercentages);
+console.log('bonusPercentage', bonusPercentages);
   
-  return {
-    name: employee.name,
-    bonusPercentages: bonusPercentages,
-    // todo, put stuff in here
+return {
+  name: employee.name,
+  bonusPercentages: bonusPercentages,
+  // todo, put stuff in here
   };
 }
 
