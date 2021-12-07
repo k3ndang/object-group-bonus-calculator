@@ -48,7 +48,40 @@ for (let employee of employees){
 
 
 function getEmployeeBonus(employee) {
+  let bonusPercentages; // tutti fruiti, figure out the values
+
+
+  // figure out bonus percentage base on employee rating
+  if (employee.reviewRating <= 2) {
+    // no bonus for you
+    bonusPercentages = 0;
+  }
+  else if (employee.reviewRating === 3) {
+    bonusPercentages = 0.04
+  }
+  else if (employee.reviewRating === 4) {
+    bonusPercentages = 0.06
+  }
+  else if (employee.reviewRating === 5) {
+    bonusPercentages = 0.10
+  }
+
+  // modify the bonus based on 
+  // 
+  if (employee.employeeNumber.toString().length === 4 ) {
+    bonusPercentages += 0.05
+    console.log(`${employee.name} 4 digits bonus`);
+    
+  }
+
+
+
+
+  console.log('bonusPercentage', bonusPercentages);
+  
   return {
+    name: employee.name,
+    bonusPercentages: bonusPercentages,
     // todo, put stuff in here
   };
 }

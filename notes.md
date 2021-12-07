@@ -37,7 +37,8 @@ Bonus calculation
     if (rating = 6)
         bonus = 10%
     }
-
+    done 👆
+--------------------
     based on employee number
     if (number > 4)
         bonus += 5%
