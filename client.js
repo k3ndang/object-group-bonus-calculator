@@ -77,11 +77,11 @@ function getEmployeeBonus(employee) {
 
   // progressive bonus system
 
-  /*if (employee.annualSalary > 65000) {
+  if (employee.annualSalary > 65000) {
     bonusPercentages -= 0.01;
     console.log(employee.name, '-1%');
   }
-
+/*
   if (bonusPercentage > 0.13) {
     bonusPercentages = 0.13;
   }
@@ -89,15 +89,21 @@ function getEmployeeBonus(employee) {
     bonusPercentages = 0;
   } 
   */
- 
+ // apply bounds of 13% and 0%
 bonusPercentages = Math.min(bonusPercentages, 0.13)
 bonusPercentages = Math.max(bonusPercentages, 0);
 
 console.log('bonusPercentage', bonusPercentages);
-  
+
+// calculate bonus and compensation
+let totalBonus = bonusPercentages * Number(employee.annualSalary);
+let totalCompensation = totalBonus + Number(employee.annualSalary);
+
 return {
   name: employee.name,
   bonusPercentages: bonusPercentages,
+  totalBonus: totalBonus,
+  totalCompensation: Math.round(totalCompensation)
   // todo, put stuff in here
   };
 }

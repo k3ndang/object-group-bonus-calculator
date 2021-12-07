@@ -9,12 +9,12 @@ for (let employee of employees)
 
 The function
 
-[] take one employee object
-[] return a new object
-    [] name
-    [] bonusPercentage
-    [] totalcompensation
-    [] totalBonus
+[x] take one employee object
+[x] return a new object
+    [x] name
+    [x] bonusPercentage
+    [x] totalcompensation
+    [x] totalBonus
 
 function getBonus(employee) {
     return {
